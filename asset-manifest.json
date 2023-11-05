@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/quicksell-task-manager/static/css/main.c3e334d6.css",
+    "main.js": "/quicksell-task-manager/static/js/main.eb9914b8.js",
+    "index.html": "/quicksell-task-manager/index.html",
+    "main.c3e334d6.css.map": "/quicksell-task-manager/static/css/main.c3e334d6.css.map",
+    "main.eb9914b8.js.map": "/quicksell-task-manager/static/js/main.eb9914b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3e334d6.css",
+    "static/js/main.eb9914b8.js"
+  ]
+}
