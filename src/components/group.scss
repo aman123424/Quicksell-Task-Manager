@@ -1,14 +1,7 @@
-.Groups-Container{
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    width: 100%;
-}
-
-.Group-Container{
-    margin: 20px;
-}
-
-.Group-Heading{
-    font-size: large;
+.Groups-Container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  width: 100vw;
+  overflow-x: scroll;
 }

@@ -1,0 +1,30 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .icon {
+    height: 25px;
+    object-fit: cover;
+  }
+
+  .profile {
+    border-radius: 100%;
+    background-color: orange;
+    // height: 100%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+}

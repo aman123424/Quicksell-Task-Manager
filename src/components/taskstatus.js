@@ -3,6 +3,12 @@ import React from "react";
 import './group.scss'
 import GroupContainer from "./groupContainer/groupContainer";
 
+import todo from '../assets/icons/todo.svg'
+import backlog from '../assets/icons/backlog.svg'
+import progress from '../assets/icons/progress.svg'
+import done from '../assets/icons/done.svg'
+import canceled from '../assets/icons/cancel.svg'
+
 
 
 function GroupbyStatus({ticketData=[],orderby}){
@@ -74,11 +80,11 @@ function GroupbyStatus({ticketData=[],orderby}){
 
     return(
         <div className="Groups-Container">
-            <GroupContainer Loading={Loading} list={BackLog} title={"Backlog"}/>
-            <GroupContainer Loading={Loading} list={Todo} title={"ToDo"}/>
-            <GroupContainer Loading={Loading} list={Inprog} title={"In Progress"}/>
-            <GroupContainer Loading={Loading} list={Done} title={"Done"}/>
-            <GroupContainer Loading={Loading} list={Cancel} title={"Cancelled"}/>
+            <GroupContainer Loading={Loading} list={BackLog} title={"Backlog"} titleIconSrc={backlog}/>
+            <GroupContainer Loading={Loading} list={Todo} title={"ToDo"} titleIconSrc={todo}/>
+            <GroupContainer Loading={Loading} list={Inprog} title={"In Progress"} titleIconSrc={progress}/>
+            <GroupContainer Loading={Loading} list={Done} title={"Done"} titleIconSrc={done}/>
+            <GroupContainer Loading={Loading} list={Cancel} title={"Cancelled"} titleIconSrc={canceled}/>
         </div>
     )
 }
