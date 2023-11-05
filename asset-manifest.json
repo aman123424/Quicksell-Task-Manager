@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/quicksell-task-manager/static/css/main.c3e334d6.css",
-    "main.js": "/quicksell-task-manager/static/js/main.eb9914b8.js",
-    "index.html": "/quicksell-task-manager/index.html",
-    "main.c3e334d6.css.map": "/quicksell-task-manager/static/css/main.c3e334d6.css.map",
-    "main.eb9914b8.js.map": "/quicksell-task-manager/static/js/main.eb9914b8.js.map"
+    "main.css": "/Quicksell-Task-Manager/static/css/main.c3e334d6.css",
+    "main.js": "/Quicksell-Task-Manager/static/js/main.eb9914b8.js",
+    "index.html": "/Quicksell-Task-Manager/index.html",
+    "main.c3e334d6.css.map": "/Quicksell-Task-Manager/static/css/main.c3e334d6.css.map",
+    "main.eb9914b8.js.map": "/Quicksell-Task-Manager/static/js/main.eb9914b8.js.map"
   },
   "entrypoints": [
     "static/css/main.c3e334d6.css",
