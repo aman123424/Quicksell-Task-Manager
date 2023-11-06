@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Quicksell Frontend Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project uses React JS library to write the frontend code for the assessment given by Quicksell.
 
-## Available Scripts
+### Instructions to run the project
 
-In the project directory, you can run:
+    -> to clone this repository, copy the link (https://github.com/aman123424/Quicksell-Task-Manager.git), run the following command in your terminal (in a appropriate folder)
+        `git clone https://github.com/aman123424/Quicksell-Task-Manager.git`
 
-### `npm start`
+    -> to navigate to the root folder of the project run `cd .\quicksell-task-manager\`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    -> to install all the necessary npm packages required, run `npm i`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    -> and then to start the project on the local server run `npm start`
 
-### `npm test`
+### API Link
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    The API link used for this project is ["https://api.quicksell.co/v1/internal/frontend-assignment"](https://api.quicksell.co/v1/internal/frontend-assignment)
 
-### `npm run build`
+### Description of the code
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    The root folder of the project contains all the major folders and files as listed below
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    -> build: contains the production code for this project
+    -> public: contains index.html file, and the png file of logo for the project
+    -> src: this folder contains all the frontend code written by me
+        -> assests: contains all the icons used in this project
+        -> components: contains all the screen codes, or the major big components like header, topbar, groupContainer
+        -> ui-elements: contains the ui-elements like card, topbar and if needed buttons can be added
+        -> App.js: this file is the first file where we start coding for the frontend interface of the project and is called in index.js file
+        -> App.scss: this file has the styling for App.js
+        -> index.js: root file of the project which is called in index.html
+        -> index.css: styling file where we can define global styles
+    -> .gitignore: this file is to declare the file/folder names which we don't want to push to remote
+    -> package.json: this file contains the react scripts, the list of npm packages we have installed, dependencies, and the project name
+    -> README.md: this file contains the instructions about how to run the project and the documentation for the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### About SCSS styling files
+    In this project, we are using scss instead of css files to style our frontend, as the code is well organised in scss files and also variables are easily accessible 
