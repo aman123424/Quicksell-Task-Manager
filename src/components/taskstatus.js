@@ -11,7 +11,7 @@ import canceled from '../assets/icons/cancel.svg'
 
 
 
-function GroupbyStatus({ticketData=[],orderby}){
+function GroupByStatus({tickets=[],orderby}){
 
     const [BackLog,setBackLog]=useState([])
     const [Todo,setTodo]=useState([])
@@ -30,25 +30,25 @@ function GroupbyStatus({ticketData=[],orderby}){
         let cDone=[]
         let cCancel=[]
         
-        for (let i = 0;i<ticketData.length;i++){
-            if(ticketData[i].status==='Backlog'){
-                cBackLog=[...cBackLog,ticketData[i]]
+        for (let i = 0;i<tickets.length;i++){
+            if(tickets[i].status==='Backlog'){
+                cBackLog=[...cBackLog,tickets[i]]
                 continue
             }
-            if(ticketData[i].status==='Todo'){
-               cTodo=[...cTodo,ticketData[i]]
+            if(tickets[i].status==='Todo'){
+               cTodo=[...cTodo,tickets[i]]
                 continue
             }
-            if(ticketData[i].status==='In progress'){
-                cInprog=[...cInprog,ticketData[i]]
+            if(tickets[i].status==='In progress'){
+                cInprog=[...cInprog,tickets[i]]
                 continue
             }
-            if(ticketData[i].status==='Done'){
-                cDone=[...cDone,ticketData[i]]
+            if(tickets[i].status==='Done'){
+                cDone=[...cDone,tickets[i]]
                 continue
             }
-            if(ticketData[i].status==='Cancelled'){
-                cCancel=[...cCancel,ticketData[i]]
+            if(tickets[i].status==='Cancelled'){
+                cCancel=[...cCancel,tickets[i]]
                 continue
             }
         }
@@ -72,7 +72,7 @@ function GroupbyStatus({ticketData=[],orderby}){
         setLoading(true)
 
         
-      }, [ticketData,orderby]);
+      }, [tickets,orderby]);
     
 
       
@@ -90,4 +90,4 @@ function GroupbyStatus({ticketData=[],orderby}){
 }
 
 
-export default GroupbyStatus;
+export default GroupByStatus;

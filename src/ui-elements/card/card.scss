@@ -4,12 +4,14 @@
   border-radius: 10px;
   width: 25vw;
   box-shadow: 0 0 10px rgba(81, 80, 80, 0.5);
-  padding: 0 15px;
+  padding: 20px 15px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 18vh;
+  gap: 12px;
+  // height: 18vh;
+  height: fit-content;
 
   .top {
     display: flex;
@@ -59,7 +61,8 @@
   
     .priority-icon{
       border-radius: 5px;
-      border: 1px grey solid;
+      // border: 1px grey solid;
+      box-shadow: 0 0 2px #6B6F76;
       padding: 4px;
       height: 20px;
       filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
@@ -74,7 +77,8 @@
   
       .tag{
         padding: 4px;
-        border: 1px grey solid;
+        // border: 1px grey solid;
+        box-shadow: 0 0 2px #6B6F76;
         border-radius: 5px;
         text-align: center;
         display: flex;

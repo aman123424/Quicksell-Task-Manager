@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import "./App.scss";
-import GroupbyUsers from "./components/users";
-import GroupbyPriority from "./components/priority";
-import GroupbyStatus from "./components/taskstatus";
+import GroupByUsers from "./components/users";
+import GroupByPriority from "./components/priority";
+import GroupByStatus from "./components/taskstatus";
 import Header from "./components/header/header";
 
 function App() {
-  const [Data, setData] = useState([]);
-  const [ticketData, setticketData] = useState("NO");
-  const [userData, setuserData] = useState([]);
+  //Created the state variables required to store the users and tasks we are fetching from the backend
+  const [data, setData] = useState([]);
+  const [tickets, setTickets] = useState("NO");
+  const [users, setUsers] = useState([]);
 
   const getData = async () => {
     await fetch("https://api.quicksell.co/v1/internal/frontend-assignment")
@@ -27,9 +28,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    setticketData(Data.tickets);
-    setuserData(Data.users);
-  }, [Data]);
+    setTickets(data.tickets);
+    setUsers(data.users);
+  }, [data]);
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -79,7 +80,7 @@ function App() {
     };
   }, []);
 
-  console.log("data: ", Data)
+  console.log("data: ", data);
 
   return (
     <div className="App">
@@ -92,18 +93,14 @@ function App() {
         toggleMenu={toggleMenu}
       />
 
-      {ticketData === "NO" ? (
+      {tickets === "NO" ? (
         <div>Please Wait</div>
       ) : Groupby === "priority" ? (
-        <GroupbyPriority orderby={Orderby} ticketData={ticketData} />
+        <GroupByPriority orderby={Orderby} tickets={tickets} />
       ) : Groupby === "users" ? (
-        <GroupbyUsers
-          orderby={Orderby}
-          ticketData={ticketData}
-          userData={userData}
-        />
+        <GroupByUsers orderby={Orderby} tickets={tickets} users={users} />
       ) : (
-        <GroupbyStatus orderby={Orderby} ticketData={ticketData} />
+        <GroupByStatus orderby={Orderby} tickets={tickets} />
       )}
     </div>
   );

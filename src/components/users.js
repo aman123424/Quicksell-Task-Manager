@@ -2,8 +2,8 @@ import React from "react";
 import "./group.scss";
 import GroupContainer from "./groupContainer/groupContainer";
 
-function GroupbyUsers({ ticketData = [], orderby, userData = [] }) {
-  function ticketsbyUser({ userid, userName }) {
+function GroupByUsers({ tickets = [], orderby, users = [] }) {
+  function ticketsbyUser({ userId, userName }) {
     let usertickets = [];
     // let userName=''
 
@@ -14,9 +14,9 @@ function GroupbyUsers({ ticketData = [], orderby, userData = [] }) {
     //     }
     // }
 
-    for (let i = 0; i < ticketData.length; i++) {
-      if (ticketData[i].userId === userid) {
-        usertickets = [...usertickets, ticketData[i]];
+    for (let i = 0; i < tickets.length; i++) {
+      if (tickets[i].userId === userId) {
+        usertickets = [...usertickets, tickets[i]];
         continue;
       }
     }
@@ -34,10 +34,10 @@ function GroupbyUsers({ ticketData = [], orderby, userData = [] }) {
   function CallUser() {
     const Groups = [];
 
-    for (let i = 0; i < userData.length; i++) {
+    for (let i = 0; i < users.length; i++) {
       let newGroup = ticketsbyUser({
-        userid: userData[i].id,
-        userName: userData[i].name,
+        userId: users[i].id,
+        userName: users[i].name,
       });
       Groups.push(newGroup);
     }
@@ -52,4 +52,4 @@ function GroupbyUsers({ ticketData = [], orderby, userData = [] }) {
   );
 }
 
-export default GroupbyUsers;
+export default GroupByUsers;

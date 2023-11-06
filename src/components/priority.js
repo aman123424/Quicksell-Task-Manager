@@ -6,89 +6,89 @@ import urgent from "../assets/icons/urgent.svg";
 import high from "../assets/icons/high.svg";
 import medium from "../assets/icons/medium.svg";
 import low from "../assets/icons/low.svg";
-import more from '../assets/icons/more.svg'
+import more from "../assets/icons/more.svg";
 
-function GroupbyPriority({ ticketData = [], orderby }) {
-  const [Priority0, setPriority0] = useState([]);
-  const [Priority1, setPriority1] = useState([]);
-  const [Priority2, setPriority2] = useState([]);
-  const [Priority3, setPriority3] = useState([]);
-  const [Priority4, setPriority4] = useState([]);
+function GroupByPriority({ tickets = [], orderby }) {
+  const [noPriorityTickets, setNoPriorityTickets] = useState([]);
+  const [lowPriorityTickets, setLowPriorityTickets] = useState([]);
+  const [mediumPriorityTickets, setMediumPriorityTickets] = useState([]);
+  const [highPriorityTickets, setHighPriorityTickets] = useState([]);
+  const [urgentPriorityTickets, setUrgentPriorityTickets] = useState([]);
   const [Loading, setLoading] = useState(false);
 
   useEffect(() => {
-    let cPriority0 = [];
-    let cPriority1 = [];
-    let cPriority2 = [];
-    let cPriority3 = [];
-    let cPriority4 = [];
+    let cNoPriorityTickets = [];
+    let cLowPriorityTickets = [];
+    let cMediumPriorityTickets = [];
+    let cHighPriorityTickets = [];
+    let cUrgentPriorityTickets = [];
 
-    for (let i = 0; i < ticketData.length; i++) {
-      if (ticketData[i].priority === 0) {
-        cPriority0 = [...cPriority0, ticketData[i]];
+    for (let i = 0; i < tickets.length; i++) {
+      if (tickets[i].priority === 0) {
+        cNoPriorityTickets = [...cNoPriorityTickets, tickets[i]];
         continue;
       }
-      if (ticketData[i].priority === 1) {
-        cPriority1 = [...cPriority1, ticketData[i]];
+      if (tickets[i].priority === 1) {
+        cLowPriorityTickets = [...cLowPriorityTickets, tickets[i]];
         continue;
       }
-      if (ticketData[i].priority === 2) {
-        cPriority2 = [...cPriority2, ticketData[i]];
+      if (tickets[i].priority === 2) {
+        cMediumPriorityTickets = [...cMediumPriorityTickets, tickets[i]];
         continue;
       }
-      if (ticketData[i].priority === 3) {
-        cPriority3 = [...cPriority3, ticketData[i]];
+      if (tickets[i].priority === 3) {
+        cHighPriorityTickets = [...cHighPriorityTickets, tickets[i]];
         continue;
       }
-      if (ticketData[i].priority === 4) {
-        cPriority4 = [...cPriority4, ticketData[i]];
+      if (tickets[i].priority === 4) {
+        cUrgentPriorityTickets = [...cUrgentPriorityTickets, tickets[i]];
         continue;
       }
     }
 
-    cPriority0.sort((a, b) => a.title.localeCompare(b.title));
-    cPriority1.sort((a, b) => a.title.localeCompare(b.title));
-    cPriority2.sort((a, b) => a.title.localeCompare(b.title));
-    cPriority3.sort((a, b) => a.title.localeCompare(b.title));
-    cPriority4.sort((a, b) => a.title.localeCompare(b.title));
+    cNoPriorityTickets.sort((a, b) => a.title.localeCompare(b.title));
+    cLowPriorityTickets.sort((a, b) => a.title.localeCompare(b.title));
+    cMediumPriorityTickets.sort((a, b) => a.title.localeCompare(b.title));
+    cHighPriorityTickets.sort((a, b) => a.title.localeCompare(b.title));
+    cUrgentPriorityTickets.sort((a, b) => a.title.localeCompare(b.title));
 
-    setPriority0(cPriority0);
-    setPriority1(cPriority1);
-    setPriority2(cPriority2);
-    setPriority3(cPriority3);
-    setPriority4(cPriority4);
+    setNoPriorityTickets(cNoPriorityTickets);
+    setLowPriorityTickets(cLowPriorityTickets);
+    setMediumPriorityTickets(cMediumPriorityTickets);
+    setHighPriorityTickets(cHighPriorityTickets);
+    setUrgentPriorityTickets(cUrgentPriorityTickets);
     setLoading(true);
-  }, [ticketData]);
+  }, [tickets]);
 
   return (
     <div className="Groups-Container">
       <GroupContainer
         Loading={Loading}
-        list={Priority4}
+        list={urgentPriorityTickets}
         title={"Urgent"}
         titleIconSrc={urgent}
       />
       <GroupContainer
         Loading={Loading}
-        list={Priority3}
+        list={highPriorityTickets}
         title={"High"}
         titleIconSrc={high}
       />
       <GroupContainer
         Loading={Loading}
-        list={Priority2}
+        list={mediumPriorityTickets}
         title={"Medium"}
         titleIconSrc={medium}
       />
       <GroupContainer
         Loading={Loading}
-        list={Priority1}
+        list={lowPriorityTickets}
         title={"Low"}
         titleIconSrc={low}
       />
       <GroupContainer
         Loading={Loading}
-        list={Priority0}
+        list={noPriorityTickets}
         title={"No Priority"}
         titleIconSrc={more}
       />
@@ -96,4 +96,4 @@ function GroupbyPriority({ ticketData = [], orderby }) {
   );
 }
 
-export default GroupbyPriority;
+export default GroupByPriority;

@@ -28,9 +28,9 @@ const Header = ({
               name="todos"
               className="filter-todo"
             >
-              <option value="priority">Priority</option>
-              <option value="users">Users</option>
               <option value="status">Status</option>
+              <option value="users">Users</option>
+              <option value="priority">Priority</option>
             </select>
           </div>
           <div className="select">
