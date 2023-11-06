@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Quicksell-Task-Manager/static/css/main.d0b0d814.css",
-    "main.js": "/Quicksell-Task-Manager/static/js/main.d384a4e1.js",
+    "main.css": "/Quicksell-Task-Manager/static/css/main.1f8aa42a.css",
+    "main.js": "/Quicksell-Task-Manager/static/js/main.004d4d7c.js",
     "static/media/filter.svg": "/Quicksell-Task-Manager/static/media/filter.c0a6c76d7cf14c8e9cbdcbfa6be780c8.svg",
     "static/media/done.svg": "/Quicksell-Task-Manager/static/media/done.d5d902b11b60f3e1b488f6e7ea32d3eb.svg",
     "static/media/profile.svg": "/Quicksell-Task-Manager/static/media/profile.11f096e991b78e5d1d5c505d62870e8d.svg",
@@ -17,11 +17,11 @@
     "static/media/medium.svg": "/Quicksell-Task-Manager/static/media/medium.d78b68e752d06359cb27a4cf9f8ec42c.svg",
     "static/media/high.svg": "/Quicksell-Task-Manager/static/media/high.f82a28b1992c9754860b6c031bbf5e60.svg",
     "static/media/plus.svg": "/Quicksell-Task-Manager/static/media/plus.c66cf606633a02f86ad90a5fa85a1fdb.svg",
-    "main.d0b0d814.css.map": "/Quicksell-Task-Manager/static/css/main.d0b0d814.css.map",
-    "main.d384a4e1.js.map": "/Quicksell-Task-Manager/static/js/main.d384a4e1.js.map"
+    "main.1f8aa42a.css.map": "/Quicksell-Task-Manager/static/css/main.1f8aa42a.css.map",
+    "main.004d4d7c.js.map": "/Quicksell-Task-Manager/static/js/main.004d4d7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0b0d814.css",
-    "static/js/main.d384a4e1.js"
+    "static/css/main.1f8aa42a.css",
+    "static/js/main.004d4d7c.js"
   ]
 }
