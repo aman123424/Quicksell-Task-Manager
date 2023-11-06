@@ -79,6 +79,8 @@ function App() {
     };
   }, []);
 
+  console.log("data: ", Data)
+
   return (
     <div className="App">
       <Header

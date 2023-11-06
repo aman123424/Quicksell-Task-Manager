@@ -1,5 +1,7 @@
 import React from "react";
 import "./header.scss";
+import down from '../../assets/icons/down.svg';
+import filter from '../../assets/icons/filter.svg'
 
 const Header = ({
   toggleMenu,
@@ -12,12 +14,14 @@ const Header = ({
   return (
     <div className="Header">
       <div id="menu-toggle" className="menu-toggle" onClick={toggleMenu}>
-        Display
+        <img alt="" src={filter} className="icon"/>
+        <div className="text">Display</div>
+        <img className="icon" alt="" src={down}/>
       </div>
       {showMenu && (
         <div id="menu-id" className="menu active">
           <div className="select">
-            <span>Grouping</span>
+            <div>Grouping</div>
             <select
               value={Groupby}
               onChange={groupbyHandler}
@@ -30,7 +34,7 @@ const Header = ({
             </select>
           </div>
           <div className="select">
-            <span>Ordering</span>
+            <div>Ordering</div>
             <select
               value={Orderby}
               onChange={orderbyHandler}

@@ -1,41 +1,102 @@
-.Card-Container {
+.card-container {
   background-color: white;
   border: 1px solid snow;
   border-radius: 10px;
-  width: 380px;
+  width: 25vw;
   box-shadow: 0 0 10px rgba(81, 80, 80, 0.5);
-  padding: 15px;
+  padding: 0 15px;
   margin-top: 20px;
-}
-
-.top {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 18vh;
 
-  .cardId {
-    color: rgb(74, 74, 74);
-    font-size: large;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .cardId {
+      color: #6B6F76;
+      font-size: large;
+    }
+  
+    .profile {
+      aspect-ratio: 1/1;
+      width: 22px;
+      padding: 5px;
+      background-color: #868700;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+    }
   }
 
-  .profile {
-    height: 75%;
-    object-fit: cover;
+  .title-row{
+    display: flex;
+    gap: 10px;
+
+    .status-icon{
+      height: 20px;
+      filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
+
+      &.progress{
+        filter: invert(100%) sepia(39%) saturate(7406%) hue-rotate(320deg) brightness(103%) contrast(89%);
+      }
+    }
+
+    .title{
+      font-size: large;
+    }
+  }
+
+  .tag-row {
+    display: flex;
+    align-items: center;
+  
+    .priority-icon{
+      border-radius: 5px;
+      border: 1px grey solid;
+      padding: 4px;
+      height: 20px;
+      filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
+    }
+  
+    .tags{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: 10px;
+      gap: 7px;
+  
+      .tag{
+        padding: 4px;
+        border: 1px grey solid;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        gap: 5px;
+
+        .circle{
+          background-color: #BEC2C8;
+          height: 12px;
+          display: flex;
+          border-radius: 100%;
+          aspect-ratio: 1/1;
+        }
+      }
+    }
   }
 }
 
-.Card-Heading {
-  font-size: larger;
-  margin-top: 10px;
-}
-
-.Card-Tag {
-  margin-top: 15px;
-}
-
-.Card-Tag > span {
-  border: 1px solid rgb(218, 218, 218);
-  border-radius: 2px;
-  margin-right: 10px;
-  padding: 2px;
-}
+// .Card-Tag > span {
+//   border: 1px solid rgb(218, 218, 218);
+//   border-radius: 2px;
+//   margin-right: 10px;
+//   padding: 2px;
+// }

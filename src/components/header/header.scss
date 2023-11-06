@@ -1,26 +1,44 @@
 .Header{
     background-color: white;
-    padding: 20px 10px;
+    padding: 10px;
 
     
     .menu-toggle{
         font-size: larger;
         border: 1px solid black;
-        width:80px;
+        width: fit-content;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        .icon{
+            filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
+        }
     }
 
     .menu{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        border: 1px solid black;
+        border-radius: 5px;
         height: 60px;
         padding: 10px;
         margin-top: 10px;
         position: absolute;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(81, 80, 80, 0.5);
+        background-color: #F8F8FA;
+        box-shadow: 0 0 10px #6B6F76;
         margin-right: 20px;
+        z-index: 2;
+        width: 25%;
+
+        .select{
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

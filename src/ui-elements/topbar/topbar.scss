@@ -7,12 +7,24 @@
   .right {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 7px;
   }
 
   .icon {
     height: 25px;
     object-fit: cover;
+    filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
+  }
+  .status{
+    margin-right: 18px;
+  }
+
+  .title{
+    font-size: large;
+  }
+
+  .count{
+    color: #6B6F76;
   }
 
   .profile {
