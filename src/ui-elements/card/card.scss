@@ -17,40 +17,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+
     .cardId {
-      color: #6B6F76;
+      color: #6b6f76;
       font-size: large;
-    }
-  
-    .profile {
-      aspect-ratio: 1/1;
-      width: 22px;
-      padding: 5px;
-      background-color: #868700;
-      color: white;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 100%;
     }
   }
 
-  .title-row{
+  .title-row {
     display: flex;
     gap: 10px;
 
-    .status-icon{
+    .status-icon {
       height: 20px;
-      filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
-
-      &.progress{
-        filter: invert(100%) sepia(39%) saturate(7406%) hue-rotate(320deg) brightness(103%) contrast(89%);
+      
+      &.filter{
+        filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg)
+        brightness(91%) contrast(94%);
       }
     }
 
-    .title{
+    .title {
       font-size: large;
     }
   }
@@ -58,27 +45,28 @@
   .tag-row {
     display: flex;
     align-items: center;
-  
-    .priority-icon{
+
+    .priority-icon {
       border-radius: 5px;
       // border: 1px grey solid;
-      box-shadow: 0 0 2px #6B6F76;
+      box-shadow: 0 0 2px #6b6f76;
       padding: 4px;
       height: 20px;
-      filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
+      margin-right: 10px;
+      filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg)
+        brightness(91%) contrast(94%);
     }
-  
-    .tags{
+
+    .tags {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      margin-left: 10px;
       gap: 7px;
-  
-      .tag{
+
+      .tag {
         padding: 4px;
         // border: 1px grey solid;
-        box-shadow: 0 0 2px #6B6F76;
+        box-shadow: 0 0 2px #6b6f76;
         border-radius: 5px;
         text-align: center;
         display: flex;
@@ -86,8 +74,8 @@
         height: fit-content;
         gap: 5px;
 
-        .circle{
-          background-color: #BEC2C8;
+        .circle {
+          background-color: #bec2c8;
           height: 12px;
           display: flex;
           border-radius: 100%;

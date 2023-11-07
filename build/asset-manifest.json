@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/Quicksell-Task-Manager/static/css/main.1f8aa42a.css",
-    "main.js": "/Quicksell-Task-Manager/static/js/main.004d4d7c.js",
+    "main.css": "/Quicksell-Task-Manager/static/css/main.01acc80e.css",
+    "main.js": "/Quicksell-Task-Manager/static/js/main.639686fa.js",
     "static/media/filter.svg": "/Quicksell-Task-Manager/static/media/filter.c0a6c76d7cf14c8e9cbdcbfa6be780c8.svg",
-    "static/media/done.svg": "/Quicksell-Task-Manager/static/media/done.d5d902b11b60f3e1b488f6e7ea32d3eb.svg",
-    "static/media/profile.svg": "/Quicksell-Task-Manager/static/media/profile.11f096e991b78e5d1d5c505d62870e8d.svg",
+    "static/media/done.svg": "/Quicksell-Task-Manager/static/media/done.7a33b3eb6d98927b829b54e9a3632aab.svg",
     "static/media/backlog.svg": "/Quicksell-Task-Manager/static/media/backlog.e9533901939960298509fe1d121e44b3.svg",
     "static/media/cancel.svg": "/Quicksell-Task-Manager/static/media/cancel.75306b7553e9c07c6a5fe569cfeeec71.svg",
     "static/media/down.svg": "/Quicksell-Task-Manager/static/media/down.69e68b70978ee3940da47f57a3ab99fb.svg",
-    "static/media/progress.svg": "/Quicksell-Task-Manager/static/media/progress.9d681669d3c5b97f59d92cbb1301ac27.svg",
+    "static/media/progress.svg": "/Quicksell-Task-Manager/static/media/progress.06f3dc416c7f3e3cd1499511fe621767.svg",
     "index.html": "/Quicksell-Task-Manager/index.html",
-    "static/media/urgent.svg": "/Quicksell-Task-Manager/static/media/urgent.666e9ac35584ca022e2b678d034470b5.svg",
     "static/media/todo.svg": "/Quicksell-Task-Manager/static/media/todo.11009935cc803685cf6e87b4de069686.svg",
     "static/media/more.svg": "/Quicksell-Task-Manager/static/media/more.2995edf917f1595b1463dc68176e0e9a.svg",
     "static/media/low.svg": "/Quicksell-Task-Manager/static/media/low.c17046bf323007758b4cbd5e0e011b41.svg",
     "static/media/medium.svg": "/Quicksell-Task-Manager/static/media/medium.d78b68e752d06359cb27a4cf9f8ec42c.svg",
+    "static/media/urgent.svg": "/Quicksell-Task-Manager/static/media/urgent.c8dee2626224684986092dc53c2643c3.svg",
     "static/media/high.svg": "/Quicksell-Task-Manager/static/media/high.f82a28b1992c9754860b6c031bbf5e60.svg",
     "static/media/plus.svg": "/Quicksell-Task-Manager/static/media/plus.c66cf606633a02f86ad90a5fa85a1fdb.svg",
-    "main.1f8aa42a.css.map": "/Quicksell-Task-Manager/static/css/main.1f8aa42a.css.map",
-    "main.004d4d7c.js.map": "/Quicksell-Task-Manager/static/js/main.004d4d7c.js.map"
+    "main.01acc80e.css.map": "/Quicksell-Task-Manager/static/css/main.01acc80e.css.map",
+    "main.639686fa.js.map": "/Quicksell-Task-Manager/static/js/main.639686fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f8aa42a.css",
-    "static/js/main.004d4d7c.js"
+    "static/css/main.01acc80e.css",
+    "static/js/main.639686fa.js"
   ]
 }

@@ -13,23 +13,27 @@
   .icon {
     height: 25px;
     object-fit: cover;
-    filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg) brightness(91%) contrast(94%);
-  }
-  .status{
-    margin-right: 18px;
+    filter: invert(47%) sepia(8%) saturate(320%) hue-rotate(179deg)
+      brightness(91%) contrast(94%);
   }
 
-  .title{
+  .status-icon {
+    margin-right: 18px;
+    height: 25px;
+    object-fit: cover;
+  }
+
+  .title {
     font-size: large;
   }
 
-  .count{
-    color: #6B6F76;
+  .count {
+    color: #6b6f76;
   }
 
   .profile {
     border-radius: 100%;
-    background-color: orange;
+    background-color: #868700;
     // height: 100%;
     width: 30px;
     aspect-ratio: 1/1;

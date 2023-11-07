@@ -67,30 +67,35 @@ function GroupByPriority({ tickets = [], orderby }) {
         list={urgentPriorityTickets}
         title={"Urgent"}
         titleIconSrc={urgent}
+        groupBy={"p"}
       />
       <GroupContainer
         Loading={Loading}
         list={highPriorityTickets}
         title={"High"}
         titleIconSrc={high}
+        groupBy={"p"}
       />
       <GroupContainer
         Loading={Loading}
         list={mediumPriorityTickets}
         title={"Medium"}
         titleIconSrc={medium}
+        groupBy={"p"}
       />
       <GroupContainer
         Loading={Loading}
         list={lowPriorityTickets}
         title={"Low"}
         titleIconSrc={low}
+        groupBy={"p"}
       />
       <GroupContainer
         Loading={Loading}
         list={noPriorityTickets}
         title={"No Priority"}
         titleIconSrc={more}
+        groupBy={"p"}
       />
     </div>
   );

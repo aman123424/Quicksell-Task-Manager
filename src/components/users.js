@@ -27,7 +27,12 @@ function GroupByUsers({ tickets = [], orderby, users = [] }) {
       usertickets.sort((a, b) => a.title.localeCompare(b.title));
     }
     return (
-      <GroupContainer Loading={true} list={usertickets} title={userName} />
+      <GroupContainer
+        Loading={true}
+        list={usertickets}
+        title={userName}
+        groupBy={"u"}
+      />
     );
   }
 

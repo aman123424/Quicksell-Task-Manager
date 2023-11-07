@@ -1,0 +1,31 @@
+.profile-wrapper {
+  position: relative;
+
+  .profile {
+    aspect-ratio: 1/1;
+    width: 22px;
+    padding: 5px;
+    background-color: #868700;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+
+  .availability {
+    position: absolute;
+    height: 12px;
+    aspect-ratio: 1/1;
+    right: -4px;
+    bottom: -4px;
+    border: 2px white solid;
+    border-radius: 100%;
+    background-color: grey;
+
+    &.available {
+      background-color: orange;
+    }
+  }
+}
